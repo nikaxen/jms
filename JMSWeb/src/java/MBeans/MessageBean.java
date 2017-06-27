@@ -39,7 +39,7 @@ public class MessageBean {
             connection = connectionFactory.createConnection();
             connection.start();
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-            Destination destination = session.createQueue("Queue Title");
+            Destination destination = session.createQueue("amqmsg");
             MessageProducer producer = session.createProducer(destination);
             producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
             TextMessage message = session.createTextMessage(getMsg());

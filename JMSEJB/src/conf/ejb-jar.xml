@@ -18,7 +18,7 @@
                 </activation-config-property>                 
                 <activation-config-property>                     
                     <activation-config-property-name>Destination</activation-config-property-name>                     
-                    <activation-config-property-value>content_text</activation-config-property-value>                 
+                    <activation-config-property-value>amqmsg</activation-config-property-value>                 
                 </activation-config-property>             
             </activation-config>         
         </message-driven>     
